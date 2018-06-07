@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>onlinebp.png</ImageUrl>
+    <NavigateUrl>https://www.online-billpay.com/</NavigateUrl>
+    <AlternateText>Ad for ASP.NET Web site</AlternateText>
+    <Impressions>5</Impressions>
+  </Ad>
+
+  <Ad>
+    <ImageUrl>wellsfargo.png</ImageUrl>
+    <NavigateUrl>https://www.wellsfargo.com/online-banking/bill-pay/</NavigateUrl>
+    <AlternateText>Ad for ASP.NET Web site</AlternateText>
+    <Impressions>5</Impressions>
+  </Ad>
+  
+  <Ad>
+    <ImageUrl>wu.png</ImageUrl>
+    <NavigateUrl>https://www.westernunion.com/us/en/pay-bills-online.html</NavigateUrl>
+    <AlternateText>Ad for ASP.NET Web site</AlternateText>
+    <Impressions>5</Impressions>
+  </Ad>
+</Advertisements>

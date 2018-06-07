@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>paypal.png</ImageUrl>
+    <NavigateUrl>https://www.paypal.com/us/home</NavigateUrl>
+    <AlternateText>Ad for Contoso, Ltd. Web site</AlternateText>
+    <Impressions>10</Impressions>
+  </Ad>
+  
+  <Ad>
+    <ImageUrl>bsnl.jpeg</ImageUrl>
+    <NavigateUrl>https://portal.bsnl.in/myportal/</NavigateUrl>
+    <AlternateText>Ad for Contoso, Ltd. Web site</AlternateText>
+    <Impressions>10</Impressions>
+  </Ad>
+  
+  <Ad>
+    <ImageUrl>itsme247.jpeg</ImageUrl>
+    <NavigateUrl>https://obc.itsme247.com/097/</NavigateUrl>
+    <AlternateText>Ad for ASP.NET Web site</AlternateText>
+    <Impressions>5</Impressions>
+  </Ad>
+
+  <Ad>
+    <ImageUrl>idea.png</ImageUrl>
+    <NavigateUrl>https://care.ideacellular.com/wps/portal/account/express-paybill</NavigateUrl>
+    <AlternateText>Ad for ASP.NET Web site</AlternateText>
+    <Impressions>5</Impressions>
+  </Ad>
+
+</Advertisements>

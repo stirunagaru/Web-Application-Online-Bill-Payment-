@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+ 
+  <Ad>
+    <ImageUrl>visionbp.jpeg</ImageUrl>
+    <NavigateUrl>http://www.practicevision.com/BillPay.aspx</NavigateUrl>
+    <AlternateText>Ad for ASP.NET Web site</AlternateText>
+    <Impressions>5</Impressions>
+  </Ad>
+
+  <Ad>
+    <ImageUrl>web.jpeg</ImageUrl>
+    <NavigateUrl>https://www.wbsedcl.in/irj/go/km/docs/internet/new_website/Home.html</NavigateUrl>
+    <AlternateText>Ad for ASP.NET Web site</AlternateText>
+    <Impressions>5</Impressions>
+  </Ad>
+
+  <Ad>
+    <ImageUrl>speedpay.png</ImageUrl>
+    <NavigateUrl>https://www.speedpay.com/</NavigateUrl>
+    <AlternateText>Ad for ASP.NET Web site</AlternateText>
+    <Impressions>5</Impressions>
+  </Ad>
+
+
+</Advertisements>

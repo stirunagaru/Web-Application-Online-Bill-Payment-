@@ -1,0 +1,99 @@
+﻿<html>
+<head>
+    <title>RapidBillPay </title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="RapidBillPay_CSS.css" />
+
+</head>
+<body onload="loadXMLDoc();" style="background-color:#FCF3CF">
+
+        <div class="wrapper row1" style="width: 100% ; padding-bottom: 20px ; padding-top:10px ;">
+            <nav>
+                <p>
+
+                    <div id="header1" style="width: 20%; float: left;"> <b> <a href="default.aspx"> Rapid Bill Pay </a> </b> </div>
+                    <div id="header2" style="width: 55%; display: inline;">
+                        <a href="aboutus.aspx">About Us</a> &emsp;&emsp;&emsp;&emsp;&emsp;
+                        <a href="security.aspx">Security</a> &emsp;&emsp;&emsp;&emsp;&emsp;
+                        <a href="contactus.html">Contact Us</a> &emsp;&emsp;&emsp;&emsp;&emsp;
+                        <a href="faq.aspx">FAQ</a> &emsp;&emsp;&emsp;&emsp;&emsp;
+                    </div>
+                    
+                </p>
+            </nav>
+        </div>
+       
+        <div class="wrapper row2" style="background-color:white; height: 240px; width:98% ; padding-left :2% ; margin:0px;">
+            <table id="container" >
+            </table>
+        </div>
+
+
+    <div id="messagebox">
+        <table id="below"> 
+            <tr id="detailsform1"> 
+                <td colspan="3"> <b><i>Contact Rapid Bill Support Staff</i></b> </td>
+            </tr>
+            <tr id="detailsform2_tr"> 
+                <td id="detailsform2_td"><input id="detailsform2_fn" type="text" name="FIrstName" placeholder="Enter First Name"></td>
+                <td id="detailsform2_td"><input id="detailsform2_ln" type="text" name="LastName" placeholder="Enter Last Name"></td>
+                <td id="detailsform2_td"><input id="detailsform2_email" type="text" name="Email" placeholder="Enter Email Address"></td>
+            </tr>
+            <tr id="detailsform3_tr"> 
+                <td id="detailsform3_td" colspan="3">
+                    <textarea id="detailsform3_msg" name="message" rows="4" cols="12" placeholder="Type your message here..."></textarea>
+                </td>
+            </tr>
+
+            <tr id="detailsform4_tr">
+                <td id="detailsform4_td" colspan="3">
+                    <input id="detailsform3_button" type="button" value="Submit your message to support staff" onclick="notActive()">
+               </td>
+            </tr>
+        </table>
+</div>
+
+       <script>
+     function loadXMLDoc() {
+                        var xmlhttp = new XMLHttpRequest();
+                        xmlhttp.onreadystatechange = function () {
+                            if (this.readyState == 4 && this.status == 200) {
+                                myFunction(this);
+                            }
+                        };
+                        xmlhttp.open("GET", "contact_info.xml", true);
+                        xmlhttp.send();
+                    }
+
+                    function myFunction(xml) {
+                        var x, i, xmlDoc, table;
+                        xmlDoc = xml.responseXML;
+
+                        x = xmlDoc.getElementsByTagName("Info")
+
+                        data = "<tr><td id = \"heads\"> Toll Free Phone Number </td> <td id = \"tails\"> :" + x[0].getElementsByTagName("toll_free_phone")[0].childNodes[0].nodeValue +
+                                   "</td><td id= \"heads\">Direct Phone Number </td> <td id = \"tails\"> :" + x[0].getElementsByTagName("direct_phone")[0].childNodes[0].nodeValue + "</td></tr>" +
+
+                               "<tr><td id = \"heads\"> Fax </td><td id= \"tails\">:" + x[0].getElementsByTagName("fax")[0].childNodes[0].nodeValue +
+                                   "</td><td id = \"heads\"> Email </td><td id= \"tails\">: " + x[0].getElementsByTagName("email")[0].childNodes[0].nodeValue + "</td></tr>" +
+
+                                "<tr><td id= \"heads\"> Address Line 1 </td><td id= \"tails\">:" + x[0].getElementsByTagName("address_line1")[0].childNodes[0].nodeValue +
+                                  " </td><td id = \"heads\"> Address Line 2  </td><td id= \"tails\">:" + x[0].getElementsByTagName("address_line2")[0].childNodes[0].nodeValue + "</td></tr>" +
+
+                                  "<tr><td id = \"heads\"> City </td><td id= \"tails\">:" + x[0].getElementsByTagName("city")[0].childNodes[0].nodeValue +
+                                  "</td><td id= \"heads\"> State </td><td id= \"tails\">:" + x[0].getElementsByTagName("state")[0].childNodes[0].nodeValue + "</td></tr>" +
+
+                                "<tr><td id= \"heads\"> Zip:</td><td id= \"tails\">:" + x[0].getElementsByTagName("zip")[0].childNodes[0].nodeValue + "</td></tr>";
+
+                        document.getElementById("container").innerHTML = data;
+                    }
+
+    function notActive() {
+        alert("Work in Progress");
+       }
+
+        </script>
+
+    </body>
+</html>
